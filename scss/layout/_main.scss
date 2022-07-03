@@ -1,0 +1,98 @@
+.main{
+    .fondo__principal{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 138vh;
+        color: white;
+        background-image: url(../img/Ihome2.jpg);
+        background-repeat: no-repeat;
+        background-size: 1400px;
+        background-position: center center;
+        font-size: xx-large;
+        font-family:$fontLexendEnda;
+    }
+    .bandoleraA{
+        padding-right: 414px;
+        margin-top: 150px;
+    }
+    .vs{
+        font-size: 150px;
+    }
+    .bandoleraK{
+        padding-left: 328px;
+        margin-bottom: 150px;
+    }
+    .promociones{
+        background-color: $colorGrisClaro;
+        font-family:$fontLexendEnda;
+            .promos__contenedor{
+                display: grid;
+                margin: 0 auto;
+                grid-template-columns: repeat(3, 1fr);
+                justify-content: center; 
+                    .promos__item{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        padding: 1rem; 
+                            .promos__toppic{
+                                margin: auto;
+                                padding: 1rem;
+                                color: #2D2D2D;
+                                font-size: 14px;
+                                font-style: normal;
+                                text-align: center; 
+                            }
+                    }
+            }
+    }
+}
+
+
+@media screen and (max-width:600px){
+
+    .fondoprincipal{
+        background-size: 890px;
+    }
+    .bandoleraA{
+        padding-right: 270px;
+        margin-top: 0px;
+    }
+    .vs{
+        font-size: 150px;
+        
+    }
+    .bandoleraK{
+        padding-left: 270px;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width:391px){
+    .main{
+        grid-area: main;
+        .fondoprincipal{
+            background-size: 150%;
+            padding-top: 10px;
+        }
+        .bandoleraA{
+            padding-right: 207px;
+            margin-top: 60px;
+            font-size: 30px;
+        }
+        .vs{
+            font-size: 150px;
+            
+        }
+        .bandoleraK{
+            padding-left: 207px;
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+    }
+}

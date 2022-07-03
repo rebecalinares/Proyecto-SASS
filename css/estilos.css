@@ -1,0 +1,346 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: black;
+  box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
+  color: white;
+}
+
+.header .encabezado__fijo h1 {
+  text-align: center;
+  font-size: 80px;
+  margin-top: 20px;
+  font-family: "Newsreader", serif;
+}
+.header .encabezado__fijo .cuotas {
+  text-align: center;
+  font-size: 15px;
+  background-color: #EEF1E5;
+  padding: 15px;
+  font-family: "Lexend Exa", sans-serif;
+}
+.header .encabezado__fijo .img__compras {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.header .encabezado__fijo .img__compras img {
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.header .encabezado__fijo .subtitulo {
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 10px;
+  font-family: "Noto Sans", sans-serif;
+}
+.header .navbar {
+  list-style-type: none;
+  width: 100%;
+  text-align: none;
+  justify-content: center;
+  grid-area: navbar;
+}
+.header .navbar ul {
+  width: 100%;
+  list-style-type: none;
+  text-align: center;
+}
+.header .navbar ul li {
+  display: inline-flex;
+  padding: 0px 20px 0px 20px;
+}
+.header .navbar ul li a {
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+  font-family: "Noto Sans", sans-serif;
+}
+.header .navbar ul li:hover {
+  background-color: rgb(243, 240, 241);
+}
+
+@media (max-width: 391px) {
+  .encabezadofijo h1 {
+    text-align: center;
+    font-size: 60px;
+  }
+
+  .navbar ul {
+    margin-top: 40px;
+  }
+}
+.main .fondo__principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 138vh;
+  color: white;
+  background-image: url(../img/Ihome2.jpg);
+  background-repeat: no-repeat;
+  background-size: 1400px;
+  background-position: center center;
+  font-size: xx-large;
+  font-family: "Lexend Exa", sans-serif;
+}
+.main .bandoleraA {
+  padding-right: 414px;
+  margin-top: 150px;
+}
+.main .vs {
+  font-size: 150px;
+}
+.main .bandoleraK {
+  padding-left: 328px;
+  margin-bottom: 150px;
+}
+.main .promociones {
+  background-color: #EEF1E5;
+  font-family: "Lexend Exa", sans-serif;
+}
+.main .promociones .promos__contenedor {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+.main .promociones .promos__contenedor .promos__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+.main .promociones .promos__contenedor .promos__item .promos__toppic {
+  margin: auto;
+  padding: 1rem;
+  color: #2D2D2D;
+  font-size: 14px;
+  font-style: normal;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .fondoprincipal {
+    background-size: 890px;
+  }
+
+  .bandoleraA {
+    padding-right: 270px;
+    margin-top: 0px;
+  }
+
+  .vs {
+    font-size: 150px;
+  }
+
+  .bandoleraK {
+    padding-left: 270px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 391px) {
+  .main {
+    grid-area: main;
+  }
+  .main .fondoprincipal {
+    background-size: 150%;
+    padding-top: 10px;
+  }
+  .main .bandoleraA {
+    padding-right: 207px;
+    margin-top: 60px;
+    font-size: 30px;
+  }
+  .main .vs {
+    font-size: 150px;
+  }
+  .main .bandoleraK {
+    padding-left: 207px;
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+}
+.aside {
+  background-color: white;
+}
+.aside .descubre {
+  font-size: xx-large;
+  padding: 70px;
+  background-image: url(../img/segundafotoprin.jpg);
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 488px;
+  width: 80%;
+  margin: 5% auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.aside .descubre a {
+  text-decoration: none;
+  font-family: "Lexend Exa", sans-serif;
+}
+.aside .aside__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aside .aside__logo img {
+  width: 170px;
+  height: 50px;
+}
+.aside .made p {
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: x-large;
+  font-family: "Lexend Exa", sans-serif;
+}
+.aside .news {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+.aside .news p {
+  font-family: "Lexend Exa", sans-serif;
+}
+.aside .news input[type=text], .aside .news select, .aside .news textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  resize: vertical;
+  font-family: "Lexend Exa", sans-serif;
+  font-size: medium;
+}
+.aside .news label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-family: "Lexend Exa", sans-serif;
+}
+.aside .news input[type=Enviar] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+.aside .news input[type=Enviar]:hover {
+  background-color: #45a049;
+}
+
+@media screen and (max-width: 600px) {
+  .descubre {
+    height: 300px;
+    width: 80%;
+  }
+  .descubre p {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 391px) {
+  .descubre {
+    height: 220px;
+    width: 85%;
+  }
+  .descubre p {
+    margin-top: -18px;
+  }
+}
+.footer {
+  background-color: #EEF1E5;
+  position: relative;
+  justify-content: center;
+}
+.footer li {
+  list-style-type: none;
+}
+.footer .footer__caja {
+  display: flex;
+  margin: 0% auto;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px;
+}
+.footer .footer__caja .pie__pagina {
+  font-family: "Lexend Exa", sans-serif;
+}
+.footer .footer__caja .centro__pie {
+  font-family: "Lexend Exa", sans-serif;
+}
+.footer .footer__caja .centro__pie .whatsapp {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.footer .footer__caja .centro__pie .whatsapp li {
+  padding-left: 5px;
+}
+.footer .footer__caja .centro__pie .mail {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.footer .footer__caja .centro__pie .mail li {
+  padding-left: 5px;
+}
+.footer .footer__caja .seguinos {
+  font-family: "Lexend Exa", sans-serif;
+  font-size: large;
+}
+.footer .footer__caja .seguinos ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .footer__caja .seguinos ul img {
+  padding-top: 10px;
+}
+.footer .fijo {
+  text-align: center;
+  background-color: #8f8f8f;
+  color: white;
+  font-size: smaller;
+  font-family: "Lexend Exa", sans-serif;
+}/*# sourceMappingURL=estilos.css.map */
