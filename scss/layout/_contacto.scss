@@ -20,7 +20,7 @@
                 label{
                     padding: 12px 12px 12px 0;
                     display: inline-block;
-                    font-family:'Lexend Exa', sans-serif;
+                    font-family:$fontLexendEnda;
                 }
                 input[type=Enviar] {
                     background-color: #04AA6D;
@@ -37,7 +37,7 @@
                     border: 1px solid #ccc;
                     border-radius: 20px;
                     resize: vertical;
-                    font-family:'Lexend Exa', sans-serif;
+                    font-family:$fontLexendEnda;
                     font-size: medium;
                 }
                 input[type=Enviar]:hover {
