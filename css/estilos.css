@@ -549,9 +549,6 @@ button:active {
     gap: 0rem;
   }
 }
-.main {
-  /*INICIO RESPONSIVE ABOUTUS*/
-}
 .main .about {
   background-color: black;
   padding: 40px;
@@ -575,25 +572,28 @@ button:active {
   width: 500px;
   height: 500px;
 }
-.main .presentacion--invertido .presentacion__contenedor .img__contenedor .presentacion__p {
+.main .presentacion--invertido .presentacion__contenedor .presentacion__p {
   font-family: "Lexend Exa", sans-serif;
 }
+
+/*INICIO RESPONSIVE ABOUTUS*/
 @media screen and (max-width: 600px) {
-  .main .presentacion--invertido, .main .presentacion__contenedor {
+  .presentacion--invertido, .presentacion__contenedor {
     padding: 1rem;
     grid-template-columns: 1fr;
   }
-  .main .img__work {
+
+  .img__work {
     width: 300px;
     height: 300px;
   }
-  .main .img__contenedor {
+
+  .img__contenedor {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
 }
-
 .main .contacto {
   background-color: black;
   padding: 40px;

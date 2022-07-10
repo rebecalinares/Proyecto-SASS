@@ -4,7 +4,6 @@
 }
 
 
-
 .main{
     .about{
         background-color: map-get($colores , negro);
@@ -28,9 +27,10 @@
             .img__contenedor{
                 .img__work{
                 @include size(500px,500px);
+                }
             }
             .presentacion__p{
-                font-family: $fontLexendEnda;
+                    font-family: $fontLexendEnda;
             }
         }
     }
@@ -49,5 +49,4 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;}
-    }
 }
