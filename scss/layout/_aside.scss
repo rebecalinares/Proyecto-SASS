@@ -1,5 +1,5 @@
 .aside{
-    background-color: $colorBlanco;
+    background-color: map-get($colores , blanco);
         .descubre{
             font-size: xx-large;
             padding: 70px;
@@ -38,8 +38,8 @@
             }
         }
         .news{
-            background-color: $colorNegro;
-            color: $colorBlanco;
+            background-color: map-get($colores , negro);
+            color: map-get($colores , blanco);
             text-align: center;
             padding: 50px;
                 p{

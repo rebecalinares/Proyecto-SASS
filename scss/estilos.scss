@@ -1,11 +1,13 @@
 
-@import "./bases/reset";
 @import "./utilities/variables";
+@import "./bases/reset";
 @import "./componentes/button";
 
 @import "./layout/header";
 @import "./layout/main";
 @import "./layout/aside";
 @import "./layout/footer";
-
-
+@import "./layout/newArrivals";
+@import "./layout/bags";
+@import "./layout/aboutUs";
+@import "./layout/contacto";

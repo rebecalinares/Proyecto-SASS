@@ -1,5 +1,5 @@
 .footer{
-    background-color: $colorGrisClaro;
+    background-color: map-get($colores , grisClaro);
     position: relative;
     justify-content: center;
         li{
@@ -10,7 +10,7 @@
             margin: 0% auto;
             flex-direction: row;
             width: 100%;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
             justify-content: space-evenly;
             align-items: center;
             padding: 50px;
@@ -56,9 +56,77 @@
         }
         .fijo{
             text-align: center;
-            background-color: $colorGrisOscuro;
-            color: $colorBlanco;
+            background-color: map-get($colores , grisOscuro);
+            color: map-get($colores , blanco);
             font-size: smaller;
             font-family: $fontLexendEnda;
         }
+}
+
+@media screen and (max-width:600px){
+
+    .fondoprincipal{
+        background-size: 890px;
+    }
+    .bandoleraA{
+        padding-right: 270px;
+        margin-top: 0px;
+    }
+    .vs{
+        font-size: 150px;
+        
+    }
+    .bandoleraK{
+        padding-left: 270px;
+        margin-bottom: 10px;
+    }
+    .promociones__ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .fcaja{
+        padding: 30px;
+    }
+    .piedepagina{
+        padding-right: 10px;
+    }
+    .centrodepiedepagina{
+        padding-right: 10px;
+    }
+    .descubre{
+        height: 300px;
+        width: 80%;
+    }
+    .descubre p{
+        margin-top: 30px;
+    }
+    .header{
+        grid-area: header;
+    }
+    .promos__contenedor {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:391px){
+    .footer__caja{
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;+
+            .pie__pagina{
+                padding-right: 10px;
+                padding-bottom: 40px;
+            }
+            .centrodepiedepagina{
+                padding-right: 10px;
+                padding-bottom: 40px;
+            }
+
+    }
+
+
+
 }

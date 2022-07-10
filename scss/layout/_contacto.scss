@@ -1,0 +1,57 @@
+.main{
+    .contacto{
+        background-color: map-get($colores , negro);
+        padding: 40px;
+        p{
+            font-size: x-large;
+            color: map-get($colores , blanco);
+            font-family: $fontLexendEnda;
+            text-align: center;
+        }
+    }
+    .contacto__form{
+        padding-top: 50px;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-bottom: 100px;
+        .caja__form{
+            form{
+                margin: 50px;
+                label{
+                    padding: 12px 12px 12px 0;
+                    display: inline-block;
+                    font-family:'Lexend Exa', sans-serif;
+                }
+                input[type=Enviar] {
+                    background-color: #04AA6D;
+                    color: map-get($colores , blanco);
+                    padding: 12px 20px;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    float: right;
+                }
+                input[type=text], select, textarea{
+                    width: 100%;
+                    padding: 12px;
+                    border: 1px solid #ccc;
+                    border-radius: 20px;
+                    resize: vertical;
+                    font-family:'Lexend Exa', sans-serif;
+                    font-size: medium;
+                }
+                input[type=Enviar]:hover {
+                    background-color: #45a049;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 391px) {
+    .contacto{
+        padding-top: 0px;
+        padding-left: 30px;
+        padding-right: 15px}
+}

@@ -5,11 +5,11 @@
         justify-content: center;
         text-align: center;
         flex-direction: column;
-        height: 138vh;
-        color: white;
+        height: 700px;
+        color: map-get($colores , blanco);
         background-image: url(../img/Ihome2.jpg);
         background-repeat: no-repeat;
-        background-size: 1400px;
+        background-size: cover;
         background-position: center center;
         font-size: xx-large;
         font-family:$fontLexendEnda;
@@ -26,7 +26,7 @@
         margin-bottom: 150px;
     }
     .promociones{
-        background-color: $colorGrisClaro;
+        background-color: map-get($colores , grisClaro);
         font-family:$fontLexendEnda;
             .promos__contenedor{
                 display: grid;
