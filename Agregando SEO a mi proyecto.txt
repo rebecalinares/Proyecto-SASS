@@ -1,0 +1,11 @@
+﻿Agregando SEO a mi proyecto
+-Agregué meta description en todas las páginas y no repetí su contenido.
+-Puse atributo alt en todas las imágenes.
+-La etiqueta title no se repite en las imágenes.
+-Optimizé todas las imágenes para una mejor carga de la página.
+-Url amigables y limpios (no abusé de las subcarpetas)
+-Usé etiquetas HN claves.
+-Contenido relevante para los usuarios.
+-Adaptable.
+-Accesibilidad.
+-Https.
