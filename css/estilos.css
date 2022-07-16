@@ -91,7 +91,6 @@ button:active {
     text-align: center;
     font-size: 60px;
   }
-
   .navbar ul {
     margin-top: 40px;
   }
@@ -102,25 +101,24 @@ button:active {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  height: 700px;
+  height: 50rem;
   color: white;
-  background-image: url(../img/Ihome2.jpg);
+  background-image: url(../../img/Ihome2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   font-size: xx-large;
   font-family: "Lexend Exa", sans-serif;
 }
 .main .bandoleraA {
-  padding-right: 414px;
-  margin-top: 150px;
+  margin: 0 50% 0 22%;
 }
 .main .vs {
   font-size: 150px;
+  margin: 0 auto;
 }
 .main .bandoleraK {
-  padding-left: 328px;
-  margin-bottom: 150px;
+  margin: 0 22% 0 50%;
 }
 .main .promociones {
   background-color: #EEF1E5;
@@ -149,47 +147,6 @@ button:active {
   text-align: center;
 }
 
-@media screen and (max-width: 600px) {
-  .fondoprincipal {
-    background-size: 890px;
-  }
-
-  .bandoleraA {
-    padding-right: 270px;
-    margin-top: 0px;
-  }
-
-  .vs {
-    font-size: 150px;
-  }
-
-  .bandoleraK {
-    padding-left: 270px;
-    margin-bottom: 10px;
-  }
-}
-@media (max-width: 391px) {
-  .main {
-    grid-area: main;
-  }
-  .main .fondoprincipal {
-    background-size: 150%;
-    padding-top: 10px;
-  }
-  .main .bandoleraA {
-    padding-right: 207px;
-    margin-top: 60px;
-    font-size: 30px;
-  }
-  .main .vs {
-    font-size: 150px;
-  }
-  .main .bandoleraK {
-    padding-left: 207px;
-    margin-bottom: 10px;
-    font-size: 30px;
-  }
-}
 .aside {
   background-color: white;
 }
@@ -208,9 +165,12 @@ button:active {
   justify-content: center;
   display: flex;
 }
-.aside .descubre a {
+.aside .descubre button a {
   text-decoration: none;
   font-family: "Lexend Exa", sans-serif;
+}
+.aside .descubre button a:hover {
+  color: white;
 }
 .aside .aside__logo {
   display: flex;
@@ -349,53 +309,42 @@ button:active {
   .fondoprincipal {
     background-size: 890px;
   }
-
   .bandoleraA {
     padding-right: 270px;
     margin-top: 0px;
   }
-
   .vs {
     font-size: 150px;
   }
-
   .bandoleraK {
     padding-left: 270px;
     margin-bottom: 10px;
   }
-
   .promociones__ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-
   .fcaja {
     padding: 30px;
   }
-
   .piedepagina {
     padding-right: 10px;
   }
-
   .centrodepiedepagina {
     padding-right: 10px;
   }
-
   .descubre {
     height: 300px;
     width: 80%;
   }
-
   .descubre p {
     margin-top: 30px;
   }
-
   .header {
     grid-area: header;
   }
-
   .promos__contenedor {
     grid-template-columns: 1fr;
   }
@@ -434,7 +383,7 @@ button:active {
   font-family: "Lexend Exa", sans-serif;
   color: white;
   text-shadow: 0 0 12px #000;
-  padding-left: 20px;
+  padding-left: 250px;
 }
 .main .new__arrivals__a .p2 {
   font-size: 80px;
@@ -442,7 +391,7 @@ button:active {
   color: white;
   text-align: right;
   text-shadow: 0 0 12px #000;
-  padding-right: 20px;
+  padding-right: 250px;
 }
 .main .contenido {
   background-color: white;
@@ -503,9 +452,8 @@ button:active {
 }
 .main .CardVenta .container-fluid .row .cardVenta__contenedor {
   background-color: #F9F8F8;
-  display: grid;
+  display: flex;
   margin: 0 auto;
-  grid-template-columns: repeat(4, 1fr);
   justify-content: space-evenly;
   position: relative;
   height: 100%;
@@ -517,19 +465,15 @@ button:active {
   transition: box-shadow 0.5s, transform 0.5s;
 }
 .main .CardVenta .container-fluid .row .cardVenta__contenedor .CardVenta__producto {
-  display: grid;
+  display: flex;
   margin: 0 auto;
-  grid-template-columns: 3;
   justify-content: baseline;
   align-content: center;
-  height: 100%;
   position: relative;
 }
 .main .CardVenta .container-fluid .row .cardVenta__contenedor .CardVenta__producto img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  width: 250px;
+  height: 350px;
 }
 .main .CardVenta .container-fluid .row .cardVenta__contenedor .CardVenta__producto button {
   margin-top: 20px;
@@ -582,12 +526,10 @@ button:active {
     padding: 1rem;
     grid-template-columns: 1fr;
   }
-
   .img__work {
     width: 300px;
     height: 300px;
   }
-
   .img__contenedor {
     display: flex;
     flex-direction: row;
