@@ -7,7 +7,7 @@
         flex-direction: column;
         height: 50rem;
         color: map-get($colores , blanco);
-        background-image: url(../../img/Ihome2.jpg);
+        background-image: url(../img/Ihome2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -53,3 +53,45 @@
 }
 
 
+@media screen and (max-width:600px){
+
+    .fondoprincipal{
+        background-size: 890px;
+    }
+    .bandoleraA{
+        padding-right: 270px;
+        margin-top: 0px;
+    }
+    .vs{
+        font-size: 150px;
+        
+    }
+    .bandoleraK{
+        padding-left: 270px;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width:391px){
+    .main{
+        grid-area: main;
+        .fondoprincipal{
+            background-size: 150%;
+            padding-top: 10px;
+        }
+        .bandoleraA{
+            padding-right: 207px;
+            margin-top: 60px;
+            font-size: 30px;
+        }
+        .vs{
+            font-size: 150px;
+            
+        }
+        .bandoleraK{
+            padding-left: 207px;
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+    }
+}
